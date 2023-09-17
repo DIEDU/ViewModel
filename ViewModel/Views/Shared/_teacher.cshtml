@@ -1,0 +1,25 @@
+﻿@model IEnumerable<ViewModel.Models.Teachers>
+
+<h2>Teacher List</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Qualification</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Gender</td>
+                <td>@item.Qualification</td>
+                <td>@item.Salary</td>
+            </tr>
+        }
+    </tbody>
+</table>
